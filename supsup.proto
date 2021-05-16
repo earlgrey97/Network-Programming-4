@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package supsup;
+
+service SuperSuper {
+	rpc SS (SSRequest) returns (SSResponse) {}
+}
+
+message SSRequest {
+	string ssreq = 1;
+	string ssreqopt = 2;
+}
+
+message SSResponse {
+	string ssres = 1;
+}

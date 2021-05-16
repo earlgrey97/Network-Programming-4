@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package supchild;
+
+service SuperChild {
+	rpc SC (SCRequest) returns (SCResponse) {}
+}
+
+message SCRequest {
+	string screq = 1;
+	string screqopt = 2;
+	string mychildid = 3;
+}
+
+message SCResponse {
+	string scres = 1;
+}
